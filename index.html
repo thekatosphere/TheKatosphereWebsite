@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js look-white">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>theKatosphere | Kat Serrano</title>
+<meta name="description" content="Kat Serrano is an author, publisher, mother, medicine woman and host of Future Ancestors. theKatosphere is where all of her lives.">
+<meta name="theme-color" content="#1F4A3A">
+<meta property="og:title" content="theKatosphere | Kat Serrano">
+<meta property="og:description" content="Author, publisher, mother, medicine woman, and creator and host of Future Ancestors. Living as a future ancestor.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231F4A3A'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='42' fill='%23E9AE3C'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.remove("no-js"); document.documentElement.classList.add("js");</script>
+<style>
+  :root {
+    --forest: #1F4A3A;      /* deep green */
+    --jade: #2F7A5B;
+    --lava: #FE4F5C;        /* Kalayaan coral */
+    --coral-deep: #D81E2F;
+    --teal: #14907A;        /* Mayon */
+    --lava-deep: #B8432C;
+    --gold: #F2B829;        /* Kalayaan sun */
+    --abaca: #F6F1E7;       /* Bikol abaca */
+    --abaca-2: #EDE5D4;
+    --haze: #4F6F8F;        /* Arayat across the plain */
+    --palay: #DCC27A;       /* Pampanga rice fields */
+    --ink: #1B2A23;
+    --muted: #4E5A53;
+    --line: #DCD3C0;
+
+    --display: "Quezon", "Gloock", Georgia, serif;
+    --sans: "Figtree", system-ui, sans-serif;
+
+    --measure: 34rem;
+    --gutter: clamp(1.25rem, 5vw, 4rem);
+  }
+
+
+  :root {
+    --white: #FFFFFF; --deep: #173A2D; --mtn1: #2A5646; --mtn2: #33654F;
+    --outline: #C9B98F; --hairline: rgba(201,185,143,.5); --hairline-soft: rgba(201,185,143,.3);
+    --on-dark-muted: #D6E6DD; --check-a: #173A2D; --check-b: #C9B98F; --logo-k: #DCC27A;
+  }
+  .look-bw {
+    --forest: #000000; --deep: #000000; --abaca: #FFFFFF; --abaca-2: #F3F3F3;
+    --ink: #000000; --muted: #555555; --line: #DDDDDD;
+    --mtn1: #262626; --mtn2: #3A3A3A; --outline: #9A9A9A;
+    --hairline: rgba(255,255,255,.35); --hairline-soft: rgba(255,255,255,.22);
+    --on-dark-muted: #D4D4D4; --check-a: #000000; --check-b: #FFFFFF; --logo-k: #FFFFFF;
+  }
+  .look-sage {
+    --forest: #4F6146; --deep: #141414; --abaca: #F1EBDF; --abaca-2: #E7DECD;
+    --ink: #141414; --muted: #555048; --line: #D6CCB8;
+    --mtn1: #5E7254; --mtn2: #6C8162; --outline: #E7DECD;
+    --hairline: rgba(241,235,223,.45); --hairline-soft: rgba(241,235,223,.25);
+    --on-dark-muted: #E2E3D6; --check-a: #141414; --check-b: #E7DECD; --logo-k: #E7DECD;
+  }
+  .look-sage .question blockquote, .look-sage .thread h3, .look-sage .room figcaption b,
+  .look-sage .press li, .look-sage .contact { color: var(--ink); }
+  .look-sage .thread a { color: #4F6146; }
+  .look-bw .thread a { color: #000000; }
+
+
+  /* ---------- white theme: clean page, every color as an accent ---------- */
+  .look-white {
+    --abaca: #FFFFFF; --abaca-2: #FFFFFF; --ink: #18161A; --muted: #5A5258; --line: #E8E4E2;
+    --grain: none; --deep: #1F4A3A;
+    --mtn1: #CFE0D4; --mtn2: #2F7A5B; --outline: #2F7A5B;
+    --check-a: #1F4A3A; --check-b: #FFFFFF;
+  }
+  .look-white body, .look-white .worlds, .look-white .contact, .look-white .question { background-image: none; }
+  .look-white body { background: #FFFFFF; }
+  .look-white .site-head { background: #FFFFFF; color: var(--ink); border-bottom: 1px solid var(--line); }
+  .look-white .site-head nav a { color: var(--ink); }
+  .look-white .site-head nav a:hover { color: var(--coral-deep); }
+  .look-white .logo .lk { color: var(--lava); }
+  .look-white .hero { background: #FFFFFF; color: var(--ink); }
+  .look-white .masthead { color: var(--ink); }
+  .look-white .masthead .k { color: var(--lava); }
+  .look-white .cover-title { font-weight: 700; }
+  .look-white .lines a { color: var(--muted); }
+  .look-white .lines b { color: var(--ink); }
+  .look-white .lines li:nth-child(1) a:hover b { color: #D81E2F; }
+  .look-white .lines-left li:nth-child(2) a:hover b { color: #B8860B; }
+  .look-white .lines-left li:nth-child(3) a:hover b { color: var(--teal); }
+  .look-white .lines-right li:nth-child(1) a:hover b { color: #4F6F8F; }
+  .look-white .lines-right li:nth-child(2) a:hover b { color: #8A6D1F; }
+  .look-white .lines-right li:nth-child(3) a:hover b { color: var(--forest); }
+  .look-white .portrait { background: #F4F2F0; border: 0; color: var(--muted); box-shadow: 14px 14px 0 var(--gold); }
+  .look-white .cover-foot .intro { color: var(--muted); }
+  .look-white .cover-foot .intro strong { color: var(--ink); }
+  .look-white .btn.solid { background: var(--forest); border-color: var(--forest); color: #FFFFFF; }
+  .look-white .btn.solid:hover { background: var(--teal); border-color: var(--teal); }
+  .look-white .btn.ghost { color: var(--ink); }
+  .look-white .btn.ghost:hover { background: #FDF3F2; }
+  .look-white .mountains { background: #FFFFFF; }
+  .look-white .question { background: #FFFFFF; color: var(--muted); border-top: 1px solid var(--line); }
+  .look-white .question blockquote { color: var(--forest); }
+  .look-white .question .body .w { color: #D9D4D2; }
+  .look-white .question .body .w.on { color: var(--ink); }
+  .look-white .question .body .w.hl.on { color: #D81E2F; }
+  .look-white .worlds { border-top: 1px solid var(--line); }
+  .look-white .room .ph { background: #F4F2F0; border: 0; border-bottom: 4px solid var(--rc, #1F4A3A); }
+  .look-white .kitchen { background: #FFFFFF; color: var(--ink); border-top: 1px solid var(--line); }
+  .look-white .kitchen h2 { color: var(--forest); }
+  .look-white .kitchen .lede { color: var(--muted); }
+  .look-white .kitchen .btn { color: var(--ink); }
+  .look-white .essays li, .look-white .essays li:first-child { border-color: var(--line); }
+  .look-white .essays a:hover { color: #D81E2F; }
+  .look-white .essays small { color: var(--teal); }
+  .look-white .contact { background: #FDF3F2; color: var(--ink); }
+  .look-white .contact h2 { color: var(--forest); }
+  .look-white .offer { border-top-width: 4px; }
+  .look-white .cover-title { color: var(--teal); }
+  .look-white .mountains path { fill: #FFFFFF !important; }
+  .look-white .mountains path[fill="none"] { fill: none !important; opacity: 1; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+  .look-white .mountains path.far[fill="none"] { stroke: #2F7A5B !important; }
+  .look-white .mountains path.near[fill="none"] { stroke: #1F4A3A !important; }
+  .look-white footer { background: var(--forest); color: #E3F1EA; }
+
+  /* preview-only style switcher (remove before launch) */
+  .switcher { position: fixed; right: 1rem; bottom: 1rem; z-index: 20; display: flex; gap: .25rem; padding: .35rem;
+    background: #FFFFFF; border: 1px solid #CCCCCC; border-radius: 4px; font-family: var(--sans); font-size: .9rem; }
+  .switcher button { font: inherit; border: 0; background: transparent; padding: .45rem .7rem; border-radius: 3px; cursor: pointer; color: #222; }
+  .switcher button[aria-pressed="true"] { background: #222; color: #FFF; }
+
+  @font-face {
+    font-family: "Quezon";
+    src: url("fonts/Quezon.woff2") format("woff2"), url("fonts/Quezon.otf") format("opentype"), url("fonts/Quezon.ttf") format("truetype");
+    font-display: swap;
+  }
+  :root { --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9 .06' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.25 0 0 0 0 0.15 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  body, .worlds, .contact { background-image: var(--grain); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--abaca);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1.125rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  .skip {
+    position: absolute; left: -999px; top: 0;
+    background: var(--gold); color: var(--ink); padding: .5rem 1rem;
+    font-family: var(--sans); z-index: 10;
+  }
+  .skip:focus { left: 1rem; top: 1rem; }
+
+  h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.04; margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: clamp(2.6rem, 6vw, 4.8rem); }
+  h3 { font-size: 1.6rem; letter-spacing: 0; }
+  p { margin: 0 0 1em; }
+
+  .wrap { max-width: 72rem; margin: 0 auto; padding: 0 var(--gutter); }
+
+  /* ---------- the two mountains: the one signature element ---------- */
+  .mountains { position: relative; z-index: 1; aspect-ratio: 1120 / 180; max-height: 260px; min-height: 60px; width: 100%; overflow: hidden; background: var(--forest); }
+  .mountains svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .tablero {
+    height: 8px;
+    background: conic-gradient(var(--check-a) 25%, var(--check-b) 0 50%, var(--check-a) 0 75%, var(--check-b) 0) 0 0 / 8px 8px;
+    border-top: 1px solid var(--outline);
+    box-shadow: 0 3px 0 var(--lava);
+  }
+  .tablero.thin { border-top: 0; }
+  @media (prefers-reduced-motion: no-preference) {
+    .mountains svg { animation: settle 2s ease-out both; }
+    @keyframes settle { from { opacity: 0; } to { opacity: 1; } }
+  }
+
+  /* ---------- header ---------- */
+  .site-head {
+    background: var(--forest); color: var(--abaca); position: sticky; top: 0; z-index: 30; transition: box-shadow .3s;
+  }
+  .site-head.scrolled { box-shadow: 0 1px 0 var(--hairline); }
+  .site-head .wrap {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 1.25rem; padding-bottom: 1.25rem; gap: 1rem; flex-wrap: wrap;
+  }
+  .logo {
+    font-family: var(--display); font-size: 1.7rem; line-height: 1;
+    letter-spacing: -0.01em; text-decoration: none; display: inline-flex; align-items: baseline;
+  }
+  .logo .lk { color: var(--logo-k); font-style: italic; font-size: 2.1rem; }
+  .logo .lw { display: inline-block; max-width: 0; opacity: 0; overflow: hidden; white-space: nowrap; vertical-align: baseline;
+    transition: max-width .5s cubic-bezier(.2,.7,.2,1), opacity .35s ease; }
+  .site-head.past-mast .logo .lw { max-width: 8em; opacity: 1; }
+  .site-head nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; flex-wrap: wrap; }
+  .site-head nav a {
+    font-family: var(--sans); font-size: 1rem; font-weight: 500; text-decoration: none; color: var(--on-dark-muted);
+  }
+  .site-head nav a:hover { color: var(--abaca); text-decoration: underline; text-underline-offset: 4px; }
+
+  /* ---------- hero: a magazine cover starring Kat ---------- */
+  .hero { background: var(--forest); color: var(--abaca); position: relative; }
+  .cover {
+    display: grid; grid-template-columns: 1fr minmax(16rem, 26rem) 1fr; column-gap: clamp(1.5rem, 3vw, 3rem);
+    grid-template-areas: "mast mast mast" "left photo right" "foot foot foot";
+    padding-top: clamp(1rem, 3vw, 2rem); padding-bottom: 0;
+  }
+  .mast-block { grid-area: mast; justify-self: center; margin: 0 0 2.5rem; }
+  .masthead {
+    margin: 0; text-align: center; font-family: var(--display);
+    font-size: clamp(3.4rem, 13.2vw, 11.25rem); line-height: .9; white-space: nowrap; letter-spacing: -0.035em; color: var(--abaca);
+  }
+  .masthead .m { display: inline-block; }
+  .masthead .k { color: var(--gold); font-style: italic; }
+  @media (prefers-reduced-motion: no-preference) {
+    .js .masthead { overflow: hidden; padding-bottom: .12em; }
+    .js .masthead .m { transform: translateY(105%); animation: up .9s cubic-bezier(.2,.8,.2,1) forwards; animation-delay: calc(var(--i) * 45ms + 150ms); }
+    .js .cover-title, .js .lines li, .js .cover-foot { opacity: 0; transform: translateY(14px); animation: fadeup .8s ease-out forwards; }
+    .js .cover-title { animation-delay: .8s; }
+    .js .lines li { animation-delay: calc(1s + var(--i) * 90ms); }
+    .js .cover-foot { animation-delay: 1.6s; }
+    .js .portrait { clip-path: inset(100% -24px -24px -24px); animation: reveal 1.2s cubic-bezier(.7,0,.2,1) .5s forwards; }
+    @keyframes up { to { transform: none; } }
+    @keyframes fadeup { to { opacity: 1; transform: none; } }
+    @keyframes reveal { to { clip-path: inset(-24px -24px -24px -24px); } }
+  }
+  .cover-title {
+    text-align: left; font-family: var(--sans); font-weight: 600;
+    font-size: clamp(1.15rem, 2.3vw, 2rem); line-height: 1.15; letter-spacing: -0.005em; color: var(--palay);
+    margin: clamp(-2.3rem, -2.1vw, -0.55rem) 0 0; padding-left: .35em; position: relative;
+  }
+  .lines { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; justify-content: space-around; gap: 1.75rem; }
+  .lines-left { grid-area: left; text-align: right; }
+  .lines-right { grid-area: right; }
+  .lines a { text-decoration: none; display: block; font-size: 1rem; line-height: 1.45; color: var(--on-dark-muted); }
+  .lines b { display: block; font-family: var(--display); font-weight: 400; font-size: clamp(1.5rem, 2.4vw, 2.3rem); line-height: 1.05; color: var(--abaca); margin-bottom: .35rem; transition: color .2s; }
+  .lines a:hover b { color: var(--gold); }
+  .portrait {
+    grid-area: photo; position: relative; z-index: 2; aspect-ratio: 3 / 4;
+    background: var(--mtn1); border: 1px solid var(--hairline);
+    display: grid; place-items: center; text-align: center; padding: 2rem;
+    font-family: var(--sans); font-size: .95rem; color: var(--on-dark-muted); overflow: hidden;
+  }
+  .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+  .portrait-tag {
+    position: absolute; left: 50%; bottom: 1rem; transform: translateX(-50%); background: var(--lava); color: #18161A;
+    font-family: var(--display); font-size: 1.15rem; padding: .35rem .9rem; white-space: nowrap;
+  }
+  .cover-foot {
+    grid-area: foot; display: flex; justify-content: space-between; align-items: end; gap: 2rem; flex-wrap: wrap;
+    padding: 3rem 0 1.5rem;
+  }
+  .welcome { max-width: 36rem; }
+  .welcome-line { font-family: var(--display); font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.05; margin: 0 0 1rem; color: var(--ink); }
+  .look-white .welcome-line { color: var(--forest); }
+  .welcome-line .wk { color: var(--lava); font-style: italic; }
+  .cover-foot .intro { font-size: 1.15rem; line-height: 1.6; margin: 0; color: var(--on-dark-muted); }
+  .cover-foot .intro strong { color: var(--abaca); font-weight: 600; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; font-family: var(--sans); font-weight: 600; font-size: 1.05rem;
+    padding: .8rem 1.3rem; border-radius: 3px; text-decoration: none;
+    border: 1px solid currentColor; letter-spacing: .01em;
+  }
+  .btn.solid { background: var(--gold); border-color: var(--gold); color: #24190A; }
+  .btn.solid:hover { background: var(--palay); border-color: var(--palay); }
+  .btn.ghost:hover { background: rgba(255,255,255,.08); }
+  .mountains { margin-top: -1px; }
+
+  /* ---------- the joyful band ---------- */
+  .marquee { background: var(--lava); color: #FFFFFF; overflow: hidden; padding: 1.1rem 0; }
+  .marquee-track { display: flex; align-items: center; gap: 1.75rem; width: max-content; }
+  .marquee span { font-family: var(--display); font-size: clamp(1.8rem, 3.6vw, 3rem); line-height: 1; white-space: nowrap; }
+  .marquee i { width: 12px; height: 12px; background: var(--gold); transform: rotate(45deg); flex: none; }
+  .marquee i:nth-of-type(3n+2) { background: #FFFFFF; }
+  .marquee i:nth-of-type(3n) { background: var(--teal); }
+  @media (prefers-reduced-motion: no-preference) {
+    .marquee-track { animation: drift 38s linear infinite; }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+    @keyframes drift { to { transform: translateX(-50%); } }
+  }
+
+  /* ---------- sections ---------- */
+  section { padding: clamp(4rem, 9vw, 7rem) 0; }
+  .lede { font-size: 1.3rem; max-width: var(--measure); color: var(--muted); margin-top: 1.25rem; }
+
+  /* the question */
+  .question { background: var(--deep); color: var(--on-dark-muted); background-image: var(--grain); }
+  .question .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+  .question blockquote {
+    margin: 0; font-family: var(--display);
+    font-size: clamp(3rem, 7vw, 6.2rem); line-height: .98; color: var(--gold);
+  }
+  .question .body { max-width: var(--measure); padding-top: 1rem; font-size: 1.2rem; }
+  .question .body p:last-child { color: inherit; }
+  .question .body .w { color: rgba(214,230,221,.28); transition: color .25s linear; }
+  .question .body .w.on { color: var(--abaca); }
+  .question .body .w.hl.on { color: var(--gold); }
+
+  /* worlds: pick a thread, the panel takes its color */
+  .worlds { background-color: var(--abaca-2); }
+  .world-list {
+    list-style: none; margin: 3rem 0 0; padding: 0;
+    display: grid; grid-template-columns: minmax(15rem, 20rem) 1fr; grid-template-rows: repeat(6, auto) 1fr; column-gap: 3rem;
+  }
+  .world { display: contents; }
+  .world-tab {
+    grid-column: 1; text-align: left; background: none; border: 0; border-top: 1px solid var(--line);
+    padding: 1.1rem 0; font-family: var(--display); font-size: 1.55rem; line-height: 1.15; color: var(--ink);
+    cursor: pointer; display: flex; align-items: center; gap: .9rem; padding-left: 4px;
+  }
+  .world:last-child .world-tab { border-bottom: 1px solid var(--line); }
+  .world-tab .swatch { width: 14px; height: 14px; flex: none; background: var(--c); transition: transform .3s ease; }
+  .world-tab[aria-expanded="true"] .swatch { transform: scale(1.6) rotate(45deg); }
+  .world-tab:hover { color: var(--c); }
+  .world-tab[aria-expanded="true"] { color: var(--ink); }
+  .world-body {
+    grid-column: 2; grid-row: 1 / span 7; align-self: stretch;
+    background: var(--c); color: var(--on);
+    display: grid; grid-template-columns: 1fr 1fr; min-height: 30rem;
+    clip-path: inset(0 0 0 100%); visibility: hidden;
+    transition: clip-path .7s cubic-bezier(.7,0,.2,1), visibility 0s .7s;
+  }
+  .world-tab[aria-expanded="true"] + .world-body { clip-path: inset(0 0 0 0); visibility: visible; transition: clip-path .7s cubic-bezier(.7,0,.2,1); z-index: 1; }
+  .world-photo {
+    margin: 1.5rem 0 1.5rem 1.5rem; display: grid; place-items: center; text-align: center; padding: 1.5rem;
+    background: rgba(0,0,0,.14); border: 1px solid rgba(255,255,255,.25);
+    font-family: var(--sans); font-size: .95rem; opacity: .9;
+  }
+  .world-photo:has(img) { padding: 0; border: 0; overflow: hidden; opacity: 1; position: relative; }
+  .world-photo:has(img) img { position: absolute; inset: 0; }
+  .world-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 57% 50%; display: block; }
+  @media (min-width: 861px) { .world-photo:has(img.fit) { align-self: center; aspect-ratio: 3 / 4; } }
+  .world-text { padding: 2.5rem; display: flex; flex-direction: column; justify-content: flex-end; }
+  .world-text h3 { font-size: clamp(2.2rem, 3.4vw, 3.2rem); color: inherit; margin-bottom: 1rem; }
+  .world-text p { margin-bottom: 1.5rem; }
+  .world-text a { font-weight: 600; color: inherit; text-underline-offset: 5px; white-space: nowrap; }
+
+  /* rooms: a pinned, sideways-scrolling gallery */
+  .rooms { padding: 0; position: relative; }
+  .rooms-pin { padding: clamp(4rem, 9vw, 7rem) 0; }
+  .rooms-viewport { overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); margin-top: 3rem; scrollbar-width: none; }
+  .rooms-viewport::-webkit-scrollbar { display: none; }
+  .rooms-track { display: flex; gap: clamp(1rem, 2vw, 2rem); padding: 0 var(--gutter); width: max-content; }
+  .room { margin: 0; scroll-snap-align: start; flex: none; width: min(78vw, 40rem); }
+  .room.tall { width: min(62vw, 24rem); }
+  .rooms { --ph-h: clamp(18rem, 52vh, 34rem); }
+  .rooms.is-pinned { --ph-h: clamp(16rem, 46vh, 30rem); }
+  .room .ph { height: var(--ph-h) !important; }
+  .room.wide { width: calc(var(--ph-h) * 1.6); }
+  .room.tall { width: calc(var(--ph-h) * 0.86); }
+  .room.square { width: calc(var(--ph-h) * 1.017); }
+  .room.vert { width: calc(var(--ph-h) * 0.75); }
+  .room .ph {
+    background: var(--abaca-2); border: 1px solid var(--line); display: grid; place-items: center;
+    color: var(--muted); font-family: var(--sans); font-size: .95rem; text-align: center; padding: 1rem;
+    height: clamp(18rem, 52vh, 34rem); overflow: hidden;
+  }
+  .room .ph { padding: 0; }
+  .room .ph:not(:has(img)) { padding: 1rem; }
+  .room .ph img { width: 100%; height: 100%; object-fit: cover; }
+  .room figcaption { margin-top: 1rem; font-size: 1.05rem; line-height: 1.45; max-width: 30rem; color: var(--muted); }
+  .room figcaption a { color: var(--forest); font-weight: 600; text-underline-offset: 3px; }
+  .room figcaption b { font-family: var(--display); font-weight: 400; font-size: 1.6rem; line-height: 1.1; display: block; color: var(--forest); margin-bottom: .3rem; }
+  .rooms.is-pinned { height: var(--pin-h, 300vh); }
+  .rooms-head { width: 100%; }
+  .rooms-lede { max-width: none; }
+  @media (min-width: 861px) { .rooms-lede { white-space: nowrap; } }
+  .rooms.is-pinned .rooms-pin { position: sticky; top: var(--head-h, 0px); height: calc(100vh - var(--head-h, 0px)); display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; }
+  .rooms.is-pinned .rooms-viewport { overflow: visible; scroll-snap-type: none; margin-top: 2rem; }
+  .rooms.is-pinned .rooms-pin { padding: 2rem 0; }
+  .rooms.is-pinned .room .ph { height: clamp(16rem, 46vh, 30rem); }
+  .rooms.is-pinned .rooms-track { will-change: transform; }
+  .rooms-progress { height: 2px; background: var(--line); margin: 2rem var(--gutter) 0; position: relative; }
+  .rooms-progress span { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--teal); }
+
+  /* kitchen table */
+  .kitchen { background: var(--deep); color: var(--abaca); }
+  .kitchen .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+  .kitchen .lede { color: var(--on-dark-muted); }
+  .essays { list-style: none; margin: 0; padding: 0; }
+  .essays li { padding: 1.25rem 0; border-bottom: 1px solid var(--hairline-soft); }
+  .essays li:first-child { border-top: 1px solid var(--hairline-soft); }
+  .essays a { text-decoration: none; font-family: var(--display); font-size: 1.6rem; line-height: 1.3; }
+  .essays a:hover { text-decoration: underline; text-underline-offset: 5px; }
+  .essays small { display: block; font-family: var(--sans); font-size: .9rem; color: var(--on-dark-muted); margin-top: .3rem; }
+  .kitchen .btn { margin-top: 2rem; color: var(--abaca); }
+
+  /* work with me */
+  .offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 3rem; }
+  .offer { border-top: 1px solid var(--c); padding-top: 1.25rem; }
+  .offer h3 { margin-bottom: .75rem; }
+  .offer p { color: var(--muted); }
+
+  /* press, inside center stage */
+  .press-block { margin-top: clamp(3.5rem, 7vw, 5.5rem); border-top: 1px solid var(--line); padding-top: 2.5rem; }
+  .press-title { font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--forest); margin-bottom: 1.25rem; }
+  .articles { list-style: none; margin: 0; padding: 0; }
+  .articles li { display: grid; grid-template-columns: 12rem 1fr; gap: 1.5rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .articles .outlet { font-family: var(--sans); font-weight: 600; font-size: .95rem; color: var(--teal); }
+  .articles a { font-family: var(--display); font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.25; text-decoration: none; color: var(--ink); }
+  .articles .title { font-family: var(--display); font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.25; color: var(--ink); }
+  .articles a:hover { color: var(--coral-deep); text-decoration: underline; text-underline-offset: 4px; }
+  .seen-label { font-family: var(--sans); font-weight: 600; font-size: 1rem; color: var(--muted); margin: 2.5rem 0 .75rem; }
+  .outlets { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .75rem 2.75rem; }
+  .outlets li { font-family: var(--display); font-size: clamp(1.4rem, 2.4vw, 2rem); color: var(--forest); }
+  .press-block .book { margin-top: 2.5rem; }
+  @media (max-width: 640px) { .articles li { grid-template-columns: 1fr; gap: .3rem; } }
+
+  /* contact */
+  .contact { background: var(--abaca-2); color: var(--forest); border-top: 1px solid var(--line); text-align: left; }
+  .contact h2 { max-width: 12ch; font-size: clamp(3.2rem, 9vw, 8.5rem); line-height: .95; }
+  .contact .lede { color: var(--muted); }
+  .contact .btn { margin-top: 2rem; background: var(--forest); color: var(--abaca); border-color: var(--forest); }
+  .contact .btn:hover { background: var(--coral-deep); border-color: var(--coral-deep); }
+
+  footer { background: var(--deep); color: var(--on-dark-muted); }
+  footer .wrap { display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; padding-top: 2rem; padding-bottom: 2.5rem; font-family: var(--sans); font-size: 1rem; }
+  footer ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  footer a { text-decoration: none; } footer a:hover { text-decoration: underline; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 860px) {
+    .room.wide { width: 88vw; }
+    .room.wide .ph { height: auto !important; aspect-ratio: 1.6; }
+    .room.tall { width: 72vw; }
+    .room.tall .ph { height: auto !important; aspect-ratio: 0.86; }
+    .room.square { width: 80vw; }
+    .room.square .ph { height: auto !important; aspect-ratio: 1.017; }
+    .room.vert { width: 66vw; }
+    .room.vert .ph { height: auto !important; aspect-ratio: 0.75; }
+    .site-head { position: relative; }
+    .question .wrap, .kitchen .wrap { grid-template-columns: 1fr; }
+    .cover { grid-template-columns: 1fr 1fr; grid-template-areas: "mast mast" "photo photo" "left right" "foot foot"; }
+    .portrait { max-width: 22rem; width: 100%; justify-self: center; margin-bottom: 2rem; }
+    .lines-left { text-align: left; }
+    .lines { justify-content: flex-start; }
+    .world-list { display: block; }
+    .world { display: block; }
+    .world-tab { width: 100%; font-size: 1.35rem; }
+    .world-body { display: none; min-height: 0; clip-path: none; visibility: visible; transition: none; grid-template-columns: 1fr; }
+    .world-tab[aria-expanded="true"] + .world-body { display: grid; }
+    .world-photo { margin: 1rem 1rem 0; aspect-ratio: 4 / 3; }
+    .world-text { padding: 1.5rem 1rem 1.75rem; }
+    .offers { grid-template-columns: 1fr; gap: 2rem; }
+  }
+  @media (max-width: 520px) {
+    .cover-title { margin-top: .35rem; }
+    .cover { grid-template-columns: 1fr; grid-template-areas: "mast" "photo" "left" "right" "foot"; }
+    .lines-right { margin-top: 1.75rem; }
+    .site-head nav ul { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="theKatosphere, back to top"><span class="logo-full" aria-hidden="true"><span class="lw">the</span><span class="lk">K</span><span class="lw">atosphere</span></span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#worlds">Worlds</a></li>
+        <li><a href="#rooms">Footprints</a></li>
+        <li><a href="#kitchen-table">Kitchen Table</a></li>
+        <li><a href="#work">Center Stage</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero">
+    <div class="wrap cover">
+      <div class="mast-block">
+        <p class="masthead" aria-hidden="true"><span class="m">t</span><span class="m">h</span><span class="m">e</span><span class="m k">K</span><span class="m">a</span><span class="m">t</span><span class="m">o</span><span class="m">s</span><span class="m">p</span><span class="m">h</span><span class="m">e</span><span class="m">r</span><span class="m">e</span></p>
+        <h1 class="cover-title">Living as a future ancestor.</h1>
+      </div>
+      <ul class="lines lines-left">
+        <li><a href="#worlds" data-world="0"><b>Kalayaan</b>Bringing our WWII heroines back into the light</a></li>
+        <li><a href="#worlds" data-world="1"><b>Future Ancestors</b>Conversations with our culture bearers</a></li>
+        <li><a href="#worlds" data-world="2"><b>Behind the Camera</b>Producing documentaries, podcasts, video and events with Audio Vision</a></li>
+      </ul>
+      <div class="portrait">
+        <img src="images/kat-portrait.jpg" alt="Kat Serrano smiling in a denim jumpsuit, her long curly hair down" width="1100" height="1531" fetchpriority="high">
+      </div>
+      <ul class="lines lines-right">
+        <li><a href="#worlds" data-world="3"><b>Center Stage</b>Talks, readings, school visits and press</a></li>
+        <li><a href="#worlds" data-world="4"><b>Sunday Kitchen Table</b>Bread, jars, healing and long stories</a></li>
+        <li><a href="#worlds" data-world="5"><b>Pull Up a Chair</b>Reach out, I'd love to connect</a></li>
+      </ul>
+      <div class="cover-foot">
+        <div class="welcome">
+          <p class="welcome-line">Welcome to the<span class="wk">K</span>atosphere.</p>
+          <p class="intro">I'm so glad you're here! I'm <strong>Kat Serrano</strong>: author, mother, storyteller and co-host of Future Ancestors. I produce podcasts, documentaries and shorts through Audio Vision, and on Sundays I like to write Sunday Kitchen Table, my letters on what I'm living and learning. This is where it all comes together: my perspective on life, and the legacy I'm leaving behind.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn solid" href="#kitchen-table">Read Sunday Kitchen Table</a>
+          <a class="btn ghost" href="book.html">Book Kat</a>
+        </div>
+      </div>
+    </div>
+    <div class="mountains" role="img" aria-label="Mount Arayat of Pampanga and Mayon Volcano of Bikol, side by side">
+      <svg viewBox="160 -30 1120 180" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <path class="far" d="M0 150 L0 122 Q120 114 240 116 L380 66 Q404 56 426 64 L470 84 L520 56 Q540 48 558 58 L700 114 Q820 122 940 122 L1440 124 L1440 150 Z" style="fill: var(--mtn1)"/>
+        <path class="far" d="M0 122 Q120 114 240 116 L380 66 Q404 56 426 64 L470 84 L520 56 Q540 48 558 58 L700 114 Q770 140 820 150" fill="none" style="stroke: var(--outline)" stroke-width="1" opacity=".35"/>
+        <path class="near" d="M560 150 Q760 142 860 128 Q960 58 990 18 Q1000 8 1010 18 Q1040 58 1140 128 Q1300 142 1440 146 L1440 150 Z" style="fill: var(--mtn2)"/>
+        <path class="near" d="M560 150 Q760 142 860 128 Q960 58 990 18 Q1000 8 1010 18 Q1040 58 1140 128 Q1300 142 1440 146" fill="none" style="stroke: var(--outline)" stroke-width="1" opacity=".55"/>
+      </svg>
+    </div>
+    <div class="tablero" role="presentation"></div>
+  </div>
+
+  <div class="marquee" aria-label="Author, storyteller, podcast host, producer, mother, future ancestor">
+    <div class="marquee-track" aria-hidden="true">
+      <span>Author</span><i></i><span>Storyteller</span><i></i><span>Podcast Host</span><i></i><span>Producer</span><i></i><span>Mother</span><i></i><span>Future Ancestor</span><i></i><span>Author</span><i></i><span>Storyteller</span><i></i><span>Podcast Host</span><i></i><span>Producer</span><i></i><span>Mother</span><i></i><span>Future Ancestor</span><i></i>
+      <span>Author</span><i></i><span>Storyteller</span><i></i><span>Podcast Host</span><i></i><span>Producer</span><i></i><span>Mother</span><i></i><span>Future Ancestor</span><i></i><span>Author</span><i></i><span>Storyteller</span><i></i><span>Podcast Host</span><i></i><span>Producer</span><i></i><span>Mother</span><i></i><span>Future Ancestor</span><i></i>
+    </div>
+  </div>
+
+  <section class="question" aria-labelledby="q-title">
+    <div class="wrap">
+      <blockquote id="q-title">What am I passing down?</blockquote>
+      <div class="body" data-light>
+        <p>Every part of my life comes back to this question. The book I wrote, and the ones still to come. The people I sit with on Future Ancestors. The stories I help bring to life behind the camera.</p>
+        <p>theKatosphere is for the hopeful, the curious and anyone looking to be inspired. Wherever you're from and wherever you're headed, there's a seat for you here. I hope you leave feeling loved, seen and heard.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="worlds" id="worlds" aria-labelledby="worlds-title">
+    <div class="wrap">
+      <h2 id="worlds-title">The worlds I live in</h2>
+      <p class="lede">Six stories, one storyteller. Start wherever you feel pulled.</p>
+      <ul class="world-list" data-active="0">
+        <li class="world" style="--c: #FE4F5C; --on: #18161A">
+          <button type="button" class="world-tab" id="wt0" aria-controls="wp0" aria-expanded="true"><span class="swatch" aria-hidden="true"></span>Kalayaan</button>
+          <div class="world-body" id="wp0" role="region" aria-labelledby="wt0">
+            <div class="world-photo"><img src="images/kalayaan-storytime.jpg" alt="A cafeteria of students with hands raised during a Kalayaan story time, the book on the screen up front" width="1100" height="617" loading="lazy"></div>
+            <div class="world-text">
+              <h3>Kalayaan</h3>
+              <p>Bringing these amazing women of history back into the light. <em>Kalayaan: Filipina Heroines of World War II</em> is a picture book for all ages, read in schools, libraries and homes.</p>
+              <a href="https://kalayaanbook.com">Visit kalayaanbook.com</a>
+            </div>
+          </div>
+        </li>
+        <li class="world" style="--c: #F2B829; --on: #18161A">
+          <button type="button" class="world-tab" id="wt1" aria-controls="wp1" aria-expanded="false"><span class="swatch" aria-hidden="true"></span>Future Ancestors</button>
+          <div class="world-body" id="wp1" role="region" aria-labelledby="wt1">
+            <div class="world-photo"><img src="images/future-ancestors.jpg" alt="Kat and Jason Hortillas at their mics with the Future Ancestors logo and a Philippine Independence Day title" width="787" height="1400" loading="lazy" style="object-position: 50% 22%"></div>
+            <div class="world-text">
+              <h3>Future Ancestors</h3>
+              <p>Conversations about the Filipino American experience, leaving a blueprint for the next generation, on the award-winning, nationally distributed podcast I co-host.</p>
+              <a href="https://futureancestors.tv">Listen to Future Ancestors</a>
+            </div>
+          </div>
+        </li>
+        <li class="world" style="--c: #0F7A67; --on: #FFFFFF">
+          <button type="button" class="world-tab" id="wt2" aria-controls="wp2" aria-expanded="false"><span class="swatch" aria-hidden="true"></span>Behind the Camera</button>
+          <div class="world-body" id="wp2" role="region" aria-labelledby="wt2">
+            <div class="world-photo"><img class="fit" src="images/behind-the-camera.jpg" alt="A podcast interview set up with two leather armchairs, microphones and framed art on the wall" width="1000" height="1333" loading="lazy" style="object-position: 50% 50%"></div>
+            <div class="world-text">
+              <h3>Behind the Camera</h3>
+              <p>Through Audio Vision, I produce podcasts, documentaries and shorts.</p>
+              <a href="https://www.audiovisionproductions.com">See Audio Vision's work</a>
+            </div>
+          </div>
+        </li>
+        <li class="world" style="--c: #4F6F8F; --on: #FFFFFF">
+          <button type="button" class="world-tab" id="wt3" aria-controls="wp3" aria-expanded="false"><span class="swatch" aria-hidden="true"></span>Center Stage</button>
+          <div class="world-body" id="wp3" role="region" aria-labelledby="wt3">
+            <div class="world-photo"><img src="images/center-stage-sway.jpg" alt="Kat with Sway Calloway in the Sway's Universe studio, Sway holding a copy of Kalayaan" width="900" height="1400" loading="lazy" style="object-position: 50% 30%"></div>
+            <div class="world-text">
+              <h3>Center Stage</h3>
+              <p>Talks, readings, school visits and press. <em>Kalayaan</em> has been in classrooms, libraries, conferences and community spaces.</p>
+              <a href="#work">See talks and press</a>
+            </div>
+          </div>
+        </li>
+        <li class="world" style="--c: #DCC27A; --on: #2A2208">
+          <button type="button" class="world-tab" id="wt4" aria-controls="wp4" aria-expanded="false"><span class="swatch" aria-hidden="true"></span>Sunday Kitchen Table</button>
+          <div class="world-body" id="wp4" role="region" aria-labelledby="wt4">
+            <div class="world-photo"><img src="images/sunday-kitchen-table.jpg" alt="Sunday Kitchen Table: Full Moon Grounding, gentle reminders for heavy days, over a purple dusk sky" width="900" height="1600" loading="lazy" style="object-position: 50% 100%"></div>
+            <div class="world-text">
+              <h3>Sunday Kitchen Table</h3>
+              <p>Sunday Kitchen Table, my Substack: the place I can write honestly and trust that whoever finds it is meant to be here.</p>
+              <a href="https://thekatosphere.substack.com">Read Sunday Kitchen Table</a>
+            </div>
+          </div>
+        </li>
+        <li class="world" style="--c: #1F4A3A; --on: #FFFFFF">
+          <button type="button" class="world-tab" id="wt5" aria-controls="wp5" aria-expanded="false"><span class="swatch" aria-hidden="true"></span>Pull Up a Chair</button>
+          <div class="world-body" id="wp5" role="region" aria-labelledby="wt5">
+            <div class="world-photo"><img src="images/pull-up-a-chair.jpg" alt="Kat standing in front of the Unisphere in Queens, wearing a navy shirt and a green woven skirt" width="1000" height="1333" loading="lazy" style="object-position: 50% 35%"></div>
+            <div class="world-text">
+              <h3>Pull Up a Chair</h3>
+              <p>Want to collaborate, book a reading or just say hello? Reach out, I'd love to connect.</p>
+              <a href="contact.html">Get in touch</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="rooms" id="rooms" aria-labelledby="rooms-title">
+    <div class="rooms-pin">
+      <div class="wrap rooms-head">
+        <h2 id="rooms-title">Footprints</h2>
+        <p class="lede rooms-lede">Where I've been, and the paths I'm making: the rooms, places and people that matter to me.</p>
+      </div>
+      <div class="rooms-viewport">
+        <div class="rooms-track">
+          <figure class="room wide" style="--rc: #F2B829">
+            <div class="ph"><img src="images/fahns-honor.jpg" alt="Kat and Jason Hortillas at the podium under a screen reading 2026 Contributions to Excellence, Kat Serrano and Jason Hortillas" width="1400" height="812" loading="lazy" style="object-position: 62% 50%"></div>
+            <figcaption><b>2026 FANHS-MNY Award Ceremony</b>Honored with a 2026 Contributions to Excellence award alongside my Future Ancestors co-host, Jason Hortillas.</figcaption>
+          </figure>
+          <figure class="room square" style="--rc: #DCC27A">
+            <div class="ph"><img src="images/in-the-studio.jpg" alt="Behind the camera at a Future Ancestors recording: a camera monitor framing Kat and Jason Hortillas in conversation" width="1300" height="1278" loading="lazy"></div>
+            <figcaption><b>In the Studio</b>Recording Future Ancestors with the people carrying our stories. Know someone who should be in the studio with us? <a href="contact.html">Get in touch</a>.</figcaption>
+          </figure>
+          <figure class="room wide" style="--rc: #14907A">
+            <div class="ph"><img src="images/roots-of-solidarity.jpg" alt="The Roots of Solidarity group in Puerto Rico, smiling and waving under string lights with hand drums" width="1400" height="875" loading="lazy" style="object-position: 50% 100%"></div>
+            <figcaption><b>From PA to Puerto Rico</b>For <em>Roots of Solidarity</em>, youth from RIZE who recorded elders' stories in Reading, PA, traveled to Puerto Rico to experience the culture and the land firsthand.</figcaption>
+          </figure>
+          <figure class="room square" style="--rc: #4F6F8F">
+            <div class="ph"><img src="images/front-row.jpg" alt="A band performing under bright stage lights in front of a packed concert crowd" width="1300" height="1279" loading="lazy"></div>
+            <figcaption><b>Front Row</b>Geese x Cold Court at the Fillmore Philadelphia.</figcaption>
+          </figure>
+          <figure class="room wide" style="--rc: #FE4F5C">
+            <div class="ph"><img src="images/kalayaan-reading.jpg" alt="Kat on stage reading Kalayaan to a gym full of students, many with their hands raised" width="1100" height="619" loading="lazy"></div>
+            <figcaption><b>Kalayaan Book Readings</b>Bringing these heroines back into the light, one classroom at a time.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="rooms-progress" aria-hidden="true"><span></span></div>
+    </div>
+  </section>
+
+  <section class="kitchen" id="kitchen-table" aria-labelledby="kt-title">
+    <div class="wrap">
+      <div>
+        <h2 id="kt-title">Sunday Kitchen Table</h2>
+        <p class="lede">My Substack, the place I can write honestly and trust that whoever finds it is meant to be here. Letters on what I'm living, learning and passing down.</p>
+        <a class="btn ghost" href="https://thekatosphere.substack.com">Subscribe on Substack</a>
+      </div>
+      <ul class="essays">
+        <li><a href="https://thekatosphere.substack.com">Full Moon Grounding: gentle reminders for heavy days</a><small>Read on Substack</small></li>
+        <li><a href="#">I've been quiet. I'm ready to take up space.</a><small>Coming soon</small></li>
+        <li><a href="#">The girl who didn't feel Filipino enough</a><small>Coming soon</small></li>
+              </ul>
+    </div>
+  </section>
+
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 id="work-title">Center Stage</h2>
+      <p class="lede">Talks, readings, school visits and press. <em>Kalayaan</em> has been in classrooms, libraries, conferences and community spaces.</p>
+      <div class="offers">
+        <div class="offer" style="--c: #FE4F5C">
+          <h3>Readings &amp; School Visits</h3>
+          <p><em>Kalayaan</em> readings for schools, libraries and families, with time for questions and the stories behind the heroines.</p>
+        </div>
+        <div class="offer" style="--c: #F2B829">
+          <h3>Speaking</h3>
+          <p>Talks on Filipino American history, reclaiming your roots, storytelling and living as a future ancestor.</p>
+        </div>
+        <div class="offer" style="--c: #14907A">
+          <h3>Workshops</h3>
+          <p>Gatherings on storytelling and family archiving, for anyone ready to honor where they come from.</p>
+        </div>
+      </div>
+
+      <div class="press-block" id="press">
+        <h3 class="press-title">In the press</h3>
+        <ul class="articles">
+          <li>
+            <span class="outlet">Inquirer USA</span>
+            <a href="https://usa.inquirer.net/133308/childrens-book-tells-stories-of-filipina-fighters-in-wwii">Children's book tells stories of Filipina fighters in WWII</a>
+          </li>
+          <li>
+            <span class="outlet">Yahoo News</span>
+            <a href="https://sports.yahoo.com/north-jersey-natives-childrens-book-083834945.html">North Jersey native's children's book spotlights Filipina resistance fighters of WWII</a>
+          </li>
+          <li>
+            <span class="outlet">Bayad Muna</span>
+            <a href="https://bayadmunaph.blogspot.com/2025/04/empowering-through-history-and-healing.html">Empowering through history and healing: a review of <em>Kalayaan</em></a>
+          </li>
+                  <li>
+            <span class="outlet">PIX11 News</span>
+            <span class="title">TV interview on <em>Kalayaan</em></span>
+          </li>
+          <li>
+            <span class="outlet">Sway's Universe</span>
+            <span class="title">Interview on <em>Kalayaan</em></span>
+          </li>
+          <li>
+            <span class="outlet">Positively Filipino</span>
+            <span class="title">Feature on <em>Kalayaan</em></span>
+          </li>
+          <li>
+            <span class="outlet">Cultural Kultivators</span>
+            <span class="title">Podcast conversation on <em>Kalayaan</em></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Let's sit at the same table.</h2>
+      <p class="lede">For bookings, collaborations, press or just to say hello.</p>
+            <a class="btn" href="contact.html">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<div class="tablero thin" role="presentation"></div>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kat Serrano. theKatosphere.</span>
+    <ul>
+      <li><a href="https://instagram.com/thekatosphere">Instagram</a></li>
+      <li><a href="https://thekatosphere.substack.com">Substack</a></li>
+      <li><a href="https://futureancestors.tv">Future Ancestors</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+  (function () {
+    var tabs = document.querySelectorAll('.world-tab');
+    document.querySelectorAll('.lines a[data-world]').forEach(function (a) {
+      a.addEventListener('click', function () { var t = document.getElementById('wt' + a.dataset.world); if (t) t.click(); });
+    });
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        tabs.forEach(function (x) { x.setAttribute('aria-expanded', x === t ? 'true' : 'false'); });
+      });
+    });
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // stagger indexes for the opening
+    document.querySelectorAll('.masthead .m').forEach(function (el, i) { el.style.setProperty('--i', i); });
+    document.querySelectorAll('.lines li').forEach(function (el, i) { el.style.setProperty('--i', i); });
+
+    // header shadow
+    var head = document.querySelector('.site-head');
+    var mast = document.querySelector('.masthead');
+    function headState() {
+      head.classList.toggle('scrolled', window.scrollY > 10);
+      if (mast) head.classList.toggle('past-mast', mast.getBoundingClientRect().bottom < head.offsetHeight);
+    }
+    window.addEventListener('scroll', headState, { passive: true }); headState();
+
+    // question: split words, light them as you scroll
+    var lightBox = document.querySelector('[data-light]'), words = [];
+    if (lightBox) {
+      var hl = ['loved,', 'seen', 'heard.'];
+      lightBox.querySelectorAll('p').forEach(function (p) {
+        var parts = p.textContent.trim().split(/\s+/);
+        p.innerHTML = parts.map(function (w) { return '<span class="w' + (hl.indexOf(w) > -1 ? ' hl' : '') + '">' + w + '</span>'; }).join(' ');
+      });
+      words = Array.prototype.slice.call(lightBox.querySelectorAll('.w'));
+      if (reduce) words.forEach(function (w) { w.classList.add('on'); });
+    }
+
+    // rooms: pin and slide sideways on wide screens
+    var rooms = document.querySelector('.rooms'), track = document.querySelector('.rooms-track'), bar = document.querySelector('.rooms-progress span');
+    var wide = window.matchMedia('(min-width: 861px)');
+    function setupRooms() {
+      if (!rooms) return;
+      if (wide.matches && !reduce) {
+        rooms.classList.add('is-pinned');
+        var dist = track.scrollWidth - window.innerWidth;
+        var hh = head.offsetHeight; rooms.style.setProperty('--head-h', hh + 'px');
+        rooms.style.setProperty('--pin-h', (window.innerHeight - hh + Math.max(dist, 0)) + 'px');
+      } else {
+        rooms.classList.remove('is-pinned'); track.style.transform = '';
+      }
+      onScroll();
+    }
+    function onScroll() {
+      if (words.length && !reduce) {
+        var r = lightBox.getBoundingClientRect(), vh = window.innerHeight;
+        var prog = Math.min(Math.max((vh * 0.85 - r.top) / (r.height + vh * 0.35), 0), 1);
+        var n = Math.round(prog * words.length);
+        words.forEach(function (w, i) { w.classList.toggle('on', i < n); });
+      }
+      if (rooms && rooms.classList.contains('is-pinned')) {
+        var hh2 = head.offsetHeight, rr = rooms.getBoundingClientRect(), total = rooms.offsetHeight - (window.innerHeight - hh2);
+        var p = Math.min(Math.max((hh2 - rr.top) / total, 0), 1);
+        var dist = track.scrollWidth - window.innerWidth;
+        track.style.transform = 'translateX(' + (-p * dist) + 'px)';
+        if (bar) bar.style.width = (p * 100) + '%';
+      } else if (rooms && bar) {
+        var vp = document.querySelector('.rooms-viewport');
+        bar.style.width = (vp.scrollLeft / Math.max(vp.scrollWidth - vp.clientWidth, 1) * 100) + '%';
+      }
+    }
+    var vpEl = document.querySelector('.rooms-viewport');
+    if (vpEl) vpEl.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('scroll', function () { requestAnimationFrame(onScroll); }, { passive: true });
+    window.addEventListener('resize', setupRooms);
+    window.addEventListener('load', setupRooms);
+    setupRooms();
+    if (!reduce && !document.documentElement.classList.contains('look-white')) {
+      var far = document.querySelectorAll('.mountains .far'), near = document.querySelectorAll('.mountains .near');
+      var ticking = false;
+      window.addEventListener('scroll', function () {
+        if (ticking) return; ticking = true;
+        requestAnimationFrame(function () {
+          var y = Math.min(window.scrollY, 900);
+          far.forEach(function (p) { p.style.transform = 'translateY(' + (y * 0.05) + 'px)'; });
+          near.forEach(function (p) { p.style.transform = 'translateY(' + (y * -0.03) + 'px)'; });
+          ticking = false;
+        });
+      }, { passive: true });
+    }
+  })();
+</script>
+
+</body>
+</html>
